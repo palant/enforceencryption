@@ -5,7 +5,7 @@ version=1.0
 author=Wladimir Palant
 
 [homepage]
-default=https://palant.de/
+default=https://github.com/palant/enforceencryption
 
 [compat]
 firefox=26.0/31.0
