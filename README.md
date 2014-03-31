@@ -1,6 +1,8 @@
 Enforce Encryption
 ==================
 
+Enforce Encryption is a Firefox extension that extends Page Info dialog to allow managing Strict Transport Security – a built-in Firefox feature that determines whether encrypted connection is enforced for a website. [Detailed description](https://palant.de/2014/03/31/enforce-encryption)
+
 Prerequisites
 -------------
 * [Python 2.7](https://www.python.org/downloads/)
