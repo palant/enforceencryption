@@ -1,7 +1,7 @@
 [general]
 id=enforceencryption@palant.de
 basename=enforceencryption
-version=1.0.2
+version=1.0.3
 author=Wladimir Palant
 
 [homepage]
