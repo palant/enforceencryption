@@ -8,4 +8,4 @@ author=Wladimir Palant
 default=https://github.com/palant/enforceencryption
 
 [compat]
-firefox=26.0/45.0
+firefox=26.0/46.0
