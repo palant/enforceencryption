@@ -1,0 +1,14 @@
+{
+  "name": {
+    "message": "Enforce Encryption"
+  },
+  "description": {
+    "message": "Включает Strict Transport Security для любых сайтов, в результате чего браузер позволяет только защищенные соединения."
+  },
+  "start": {
+    "message": "Включить защиту для этого сайта"
+  },
+  "stop": {
+    "message": "Выключить защиту для этого сайта"
+  }
+}

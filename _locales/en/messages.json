@@ -1,0 +1,14 @@
+{
+  "name": {
+    "message": "Enforce Encryption"
+  },
+  "description": {
+    "message": "Aktivates Strict Transport Security for any website, so that only encrypted connections are allowed."
+  },
+  "start": {
+    "message": "Start enforcing encrypted connections for this site"
+  },
+  "stop": {
+    "message": "Stop enforcing encrypted connections for this site"
+  }
+}

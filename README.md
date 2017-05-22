@@ -1,29 +1,33 @@
 Enforce Encryption
 ==================
 
-Enforce Encryption is a Firefox extension that extends Page Info dialog to allow managing Strict Transport Security – a built-in Firefox feature that determines whether encrypted connection is enforced for a website. [Detailed description](https://palant.de/2014/03/31/enforce-encryption)
+Enforce Encryption is a Firefox, Chrome, Opera and Edge extension that allows managing Strict Transport Security. This is a built-in browser feature that that enforces encrypted connections for websites, normally activated by the website itself. With Enforce Encryption you can activate Strict Transport Security for any website by clicking the Enforce Encryption icon (only available for encrypted connections). [Detailed description](https://palant.de/2014/03/31/enforce-encryption)
 
-Prerequisites
--------------
-* [Python 2.7](https://www.python.org/downloads/)
-* [Jinja2 module for Python](http://jinja.pocoo.org/docs/intro/#installation)
+Installing build prerequisites
+------------------------------
+
+In order to build Enforce Encryption you will need to install [Node.js](https://nodejs.org/) first (Node 6 or higher is required). You will also need [Gulp](http://gulpjs.com/), run the following command to install it (administrator privileges required):
+
+    npm install --global gulp-cli
+
+Additional dependencies are installed using the following command in the extension directory:
+
+    npm install
 
 How to build
 ------------
 
-Run the following command:
+If all the dependencies are installed, creating a Firefox build is simply a matter of running Gulp:
 
-    python build.py build
+    gulp xpi
 
-This will create a development build with the file name like `enforceencryption-1.2.3.nnnn.xpi`. In order to create a release build use the following command:
+This will produce a file named like `enforceencryption-n.n.n.xpi`. Creating a build for Chrome and Opera is similar but requires a private key that the build should be signed with:
 
-    python build.py build --release
+    gulp crx --private-key=key.pem
+
+This will create a signed Chrome packaged named like `enforceencryption-n.n.n.crx`. If you omit the private key parameter you will get an unsigned ZIP package instead.
 
 How to test
 -----------
 
-Testing your changes is easiest if you install the [Extension Auto-Installer extension](https://addons.mozilla.org/addon/autoinstaller/). Then you can push the current repository state to your browser using the following command:
-
-    python build.py autoinstall 8888
-
-Enforce Encryption will be updated automatically, without any prompts or browser restarts.
+In order to test your changes you can load the repository to your browser as an unpacked extension directly. Then you will only have to reload in order for the changes to apply.

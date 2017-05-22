@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+  "version": "2.0",
+  "minimum_chrome_version": "49.0",
+  "applications": {
+    "gecko": {
+      "id": "enforceencryption@palant.de",
+      "strict_min_version": "45.0"
+    }
+  },
+  "default_locale": "en",
+  "name": "__MSG_name__",
+  "short_name": "__MSG_name__",
+  "description": "__MSG_description__",
+  "author": "Wladimir Palant",
+  "homepage_url": "https://github.com/palant/enforceencryption",
+  "icons": {
+    "48": "icon.png",
+    "64": "icon64.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "webNavigation"
+  ],
+  "background": {
+    "scripts": ["data/background/background.js"]
+  },
+  "page_action": {
+    "default_icon": {
+      "16": "data/images/unlocked16.png",
+      "20": "data/images/unlocked20.png",
+      "24": "data/images/unlocked24.png",
+      "25": "data/images/unlocked25.png",
+      "30": "data/images/unlocked30.png",
+      "32": "data/images/unlocked32.png",
+      "40": "data/images/unlocked40.png"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": {
+    "message": "Enforce Encryption"
+  },
+  "description": {
+    "message": "Aktiviert Strict Transport Security für beliebige Webseiten, so dass nur noch verschlüsselte Verbindungen zugelassen werden."
+  },
+  "start": {
+    "message": "Verschlüsselung für diese Seite erzwingen"
+  },
+  "stop": {
+    "message": "Verschlüsselung für dieser Seite nicht mehr erzwingen"
+  }
+}
