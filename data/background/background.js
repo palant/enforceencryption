@@ -210,7 +210,7 @@ api.pageAction.onClicked.addListener(tab =>
     api.webRequest.onHeadersReceived.addListener(listener, {
       urls: [url],
       types: ["xmlhttprequest"]
-    }, ["blocking"]);
+    }, ["responseHeaders", "blocking"]);
     return window.fetch(url, {
       method: "HEAD",
       cache: "force-cache"
