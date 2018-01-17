@@ -80,7 +80,6 @@ function checkStatus(tabId)
 
   let listener = function(details)
   {
-    console.log(details);
     seenRequest = true;
     if (seenSecure && !details.url.startsWith("https://"))
       seenSecure = false;
