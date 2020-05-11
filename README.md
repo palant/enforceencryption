@@ -1,5 +1,7 @@
-Enforce Encryption
+Enforce Encryption (DEPRECATED!)
 ==================
+
+IMPORTANT: This extension is deprecated. The latest tagged version will not work in Firefox 57 and above, whereas latest commit hasn't been sufficiently tested. This functionality isn't really necessary today given that the most important websites use Strict Transport Security out of the box.
 
 Enforce Encryption is a Firefox, Chrome, Opera and Edge extension that allows managing Strict Transport Security. This is a built-in browser feature that that enforces encrypted connections for websites, normally activated by the website itself. With Enforce Encryption you can activate Strict Transport Security for any website by clicking the Enforce Encryption icon (only available for encrypted connections). [Detailed description](https://palant.de/2014/03/31/enforce-encryption)
 
